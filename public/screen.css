@@ -115,6 +115,8 @@ nav {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   font-weight: bold;
+  padding: 1rem 0 1rem 0.5rem;
+
   /* outline: 1px solid #314e6e; */
 }
 .left-arrow-button {
