@@ -38,13 +38,23 @@ nav {
   color: #fff;
   font-size: 1.5rem;
   text-decoration: none;
+  position: absolute;
+  left: 6px;
 }
 .about-header {
   color: #fff;
   padding: 1.25rem;
   text-decoration: underline;
 }
-
+.explore-your-universe {
+  color: #ffffff;
+  align-self: center;
+  font-size: 32px;
+}
+.hero-image {
+  background-image: url("https://images.unsplash.com/photo-1464802686167-b939a6910659?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1333&q=80");
+  height: 25rem;
+}
 .contact-us-header {
   color: #fff;
   padding: 1.25rem;
@@ -69,7 +79,7 @@ nav {
   display: flex;
   text-align: center;
   justify-content: center;
-  font-size: 0.8;
+  font-size: 12.8px;
   color: var(--main-text-color);
 }
 .title {
@@ -82,13 +92,17 @@ nav {
 }
 .upcoming-launches-section {
   --main-accent-color: #ffc107;
+  background-color: #ffc107;
   /* display: flex; */
+  padding: 0.1rem;
 }
 .upcoming-launches-h2 {
   background-color: rgb(255, 193, 7);
 }
 .launches {
   display: flex;
+  flex-direction: row;
+  padding: 5rem;
 }
 
 .right-arrow-button {
@@ -96,11 +110,20 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 8rem 0rem 8rem 0rem;
   /* background-color: rgb(255, 193, 7); */
+}
+.launch-card-section {
+  height: 10rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.card-parent {
+  background-color: blue;
 }
 .mission-statement-section {
   display: flex;
+  text-align: center;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -108,7 +131,6 @@ nav {
   background-clip: rgb(209, 196, 233);
 }
 .our-mission-statement-h2 {
-  display: block;
   font-size: 1.5rem;
   margin-block-start: 0.83em;
   margin-block-end: 0.83em;
@@ -122,22 +144,32 @@ nav {
 .left-arrow-button {
   border-radius: 0 1rem 1rem 0rem;
   width: 5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 8rem 0rem 8rem 0rem;
+  /* height: ; */
+  /* display: flex; */
+  /* justify-content: center;
+  align-items: center; */
   background-color: #ffc107;
   font-size: 2rem;
+  position: absolute;
+  left: 0;
 }
 .right-arrow-button {
-  border-radius: 0 1rem 1rem 0rem;
+  border-radius: 1rem 0rem 0rem 1rem;
   width: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 8rem 0rem 8rem 0rem;
+  /* margin: 8rem 0rem 8rem 0rem; */
   background-color: #ffc107;
   font-size: 2rem;
+  position: absolute;
+  right: 0%;
+}
+.mission-statement-text {
+  text-align: center;
+  margin-bottom: 3rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 footer {
