@@ -113,10 +113,17 @@ nav {
   /* background-color: rgb(255, 193, 7); */
 }
 .launch-card-section {
+  margin: 1rem 3rem;
+  background-color: lightgrey;
+  border-radius: .9rem;
   height: 10rem;
-  width: 100%;
+  width: 95%;
+  padding: 0 1rem .5rem 1rem;
   display: flex;
   justify-content: center;
+  align-items: center;
+  
+  
 }
 .card-parent {
   background-color: blue;
@@ -128,10 +135,10 @@ nav {
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
-  background-clip: rgb(209, 196, 233);
+  background-color: rgb(209, 196, 233);
 }
 .our-mission-statement-h2 {
-  font-size: 1.5rem;
+  font-size: 2.3rem;
   margin-block-start: 0.83em;
   margin-block-end: 0.83em;
   margin-inline-start: 0px;
@@ -152,6 +159,7 @@ nav {
   font-size: 2rem;
   position: absolute;
   left: 0;
+  margin: 4.9rem 0rem 8rem 0rem;
 }
 .right-arrow-button {
   border-radius: 1rem 0rem 0rem 1rem;
@@ -164,6 +172,7 @@ nav {
   font-size: 2rem;
   position: absolute;
   right: 0%;
+  margin: 4.9rem 0rem 8rem 0rem;
 }
 .mission-statement-text {
   text-align: center;
