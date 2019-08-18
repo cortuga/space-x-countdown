@@ -55,6 +55,12 @@ nav {
   background-image: url("https://images.unsplash.com/photo-1464802686167-b939a6910659?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1333&q=80");
   height: 25rem;
 }
+.hero-img {
+  /* background-position: center; */
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+  /* width: 100%; */
+}
 .contact-us-header {
   color: #fff;
   padding: 1.25rem;

@@ -16,5 +16,9 @@
     "eslint-plugin-standard": "^4.0.0",
     "stylelint": "^10.1.0",
     "stylelint-config-standard": "^18.3.0"
+  },
+  "dependencies": {
+    "upgrade": "^1.1.0",
+    "yarn": "^1.17.3"
   }
 }

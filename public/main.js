@@ -1,14 +1,37 @@
-const imageMainSetup = async () => {
-  // we want to call the API, using fetch
-  // then console.lot the response
-
-  // document.querySelector('punchline').classList.add('hide')
-  // document.querySelector('.setup').textContent = '...'
+const main = async () => {
 
   const response = await fetch(
     "https://sdg-astro-api.herokuapp.com/api/Nasa/apod"
-  );
-  console.log(response);
+    );
+    const data = await response.json();
+    if (response.status === 200) {
+    console.log(data); 
+    console.log(data.hdUrl); //Need help here
+}
+}
+
+
+
+const imageMainSetup = async () => { 
+  //grabs hero image, sets to variable, qS img tag & set to the hdUrl variable
+  // we want to call the API, using fetch
+  // then console.lot the response
+
+  
+  
+  const response = await fetch(
+    "https://sdg-astro-api.herokuapp.com/api/Nasa/apod"
+    );
+    const data = await response.json();
+    if (response.status === 200) {
+    // console.log(data);
+    // console.log(data.hdUrl);
+    
+    
+    document.querySelector('.hero-image').value = data.hdUrl
+    }
+
+  // return response.json()
   // if (response.status === 200) {
   //   const resp = await response.json()
   //   console.log(joke)
@@ -16,17 +39,9 @@ const imageMainSetup = async () => {
   //   document.querySelector('.punchline').textContent = joke.punchline
 };
 
-//spacex url request https://sdg-astro-api.herokuapp.com/api/Nasa/apod
+// document.querySelector(".left-arrow-button").addEventListener("click", // -1 carousel function);
 
-// document //what is this doing?
-//   .querySelector(".reveal-punchline")
-//   .addEventListener("click", () => {
-//     document //what is this doing?
-//       .querySelector("punchline")
-//       .classList.remove("hide");
-//   });
-
-// document.querySelector(".get-another").addEventListener("click", main);
+// document.querySelector(".right-arrow-button").addEventListener("click", // +1 carousel function);
 
 // document.addEventListener("DOMContentLoaded", main);
-document.addEventListener("DOMContentLoaded", imageMainSetup);
+document.addEventListener("DOMContentLoaded", main);
