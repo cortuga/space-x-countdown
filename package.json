@@ -19,6 +19,6 @@
   },
   "dependencies": {
     "upgrade": "^1.1.0",
-    "yarn": "^1.17.3"
+    "yarn": "^1.22.0"
   }
 }
