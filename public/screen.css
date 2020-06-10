@@ -125,25 +125,42 @@ nav {
 .launch-card-section {
   margin: 1rem 3rem;
   background-color: lightgrey;
-  border-radius: .9rem;
-  height: 10rem;
-  width: 95%;
+  border-radius: .5rem;
+  /* height: 10rem; */
+  width: 100%;
   padding: 0 1rem .5rem 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  
-  
 }
+
+/* .carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
 .card-parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  height: 100%
+  /* height: 100%; */
   padding: 2rem;
 }
 .launch-name {
   display: flex;
   justify-content: center;
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
+}
+.launch-description {
+  
+  padding: 1rem;
+}
+.launch-countdown {
+  padding: 1rem;
+}
+.launch-location {
+  padding: 1rem;
 }
 .mission-statement-section {
   display: flex;

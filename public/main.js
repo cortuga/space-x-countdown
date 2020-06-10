@@ -30,29 +30,33 @@ const main = async () => {
   if (response2.status === 200) {
     console.log(data2)
     
+    //use forEach or assign the indexes of data2 to a for loop somehow. Maybe just have an array with 2 functions where each button click adds or subtracts one from i, to scroll the carousel. NOTE: carousel should change every 10seconds.
+
     const missionName = data2[0].mission_name;
     document.querySelector('.launch-name').textContent = missionName;
-    const missionDescription = data2[0]
+    const missionDescription = data2[0].details;
+    document.querySelector('.launch-description').textContent = missionDescription;
     const launchCountdown = data2[0].launch_date_utc;
     const launchSite = data2[0].launch_site.site_name_long;
-    document.querySelector('launch-location').textContent = 
+    document.querySelector('.launch-location').textContent = launchSite;
+
     console.log(launchCountdown)
   } else {
     console.log(console.error());
   }
-  
-}
+
+};
 
 const carouselNext = () => {
 
 }
 const carouselPrevious = () => {
-  
+
 }
 //create a carousel 
-  const slider = document.querySelector('.slider');
-  const previous = document.querySelector('.left-arrow-button');
-  const next = document.querySelector('.right-arrow-button');
+  // const slider = document.querySelector('.slider');
+  // const previous = document.querySelector('.left-arrow-button');
+  // const next = document.querySelector('.right-arrow-button');
 
 
 // document.querySelector(".left-arrow-button").addEventListener("click", // -1 carousel function);
